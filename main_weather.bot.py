@@ -34,11 +34,7 @@ async def get_weather(message: types.Message):
         print("Проверьте название города")
 
 
-@dp.message_handler(commands=['button'])
-async def get_button(message: types.Message):
-    button_hi = types.KeyboardButton('Привет! 👋')
-    greet_kb = types.ReplyKeyboardMarkup()
-    greet_kb.add(button_hi)
+
 
 
 if __name__ == "__main__":
